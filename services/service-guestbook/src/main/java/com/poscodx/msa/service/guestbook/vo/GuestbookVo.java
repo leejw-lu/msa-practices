@@ -8,9 +8,15 @@ import lombok.ToString;
 @Setter
 @ToString
 public class GuestbookVo {
-	private Long no;
-	private String name;
-	private String password;
-	private String regDate;
-	private String contents;
+//	private Long no;
+//	private String name;
+//	private String password;
+//	private String regDate;
+//	private String contents;
+	
+	Long no;
+	String name;
+	String password;
+	String regDate;
+	String contents;
 }

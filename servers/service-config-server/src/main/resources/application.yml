@@ -2,7 +2,7 @@ spring:
    application:
       name: service-config-server
    profiles:
-      active: native #이걸 git으로 바꾸면 git에서 가져옴. native로 하면 native 설정 가져옴.
+      active: git #이걸 git으로 바꾸면 git에서 가져옴. native로 하면 native 설정 가져옴.
 
 ---
 # configuration: common       
@@ -58,13 +58,13 @@ spring:
    cloud:
      config:
        server:
-          encrypt.enabled: false
+          encrypt.enabled: true
           native:                  
-              searchLocations: file:///D:/poscodx2024/sts-workspace/msa-practices-config-repo-main/service-emaillist,
-                               file:///D:/poscodx2024/sts-workspace/msa-practices-config-repo/service-storage,
-                               file:///D:/poscodx2024/sts-workspace/msa-practices-config-repo/service-gallery,
-                               file:///D:/poscodx2024/sts-workspace/msa-practices-config-repo/service-guestbook,
-                              file:///D:/poscodx2024/sts-workspace/msa-practices-config-repo/service-gateway-server
+              searchLocations: file:///E:/poscodx2024/sts-workspace/msa-practices-config-repo-main/service-emaillist,
+                               file:///E:/poscodx2024/sts-workspace/msa-practices-config-repo/service-storage,
+                               file:///E:/poscodx2024/sts-workspace/msa-practices-config-repo/service-gallery,
+                               file:///E:/poscodx2024/sts-workspace/msa-practices-config-repo/service-guestbook,
+                               file:///E:/poscodx2024/sts-workspace/msa-practices-config-repo/service-gateway-server
 
 logging:
    pattern:
